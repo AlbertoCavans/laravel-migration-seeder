@@ -22,17 +22,17 @@
       </div>
       @forelse($trains as $train)
       <div class="row">
-        <div class="col">{{ $train->azienda }}</div>
-        <div class="col">{{ $train->stazione_partenza }}</div>
-        <div class="col">{{ $train->stazione_arrivo }}</div>
-        <div class="col">{{ $train->orario_partenza }}</div>
-        <div class="col">{{ $train->orario_arrivo }}</div>
-        <div class="col">{{ $train->codice_treno }}</div>
-        <div class="col">{{ $train->numero_carrozza }}</div>
-        <div class="col">{{ $train->in_orario ? "Sì" : "No" }}</div>
-        <div class="col">{{ $train->cancellato ? "Sì" : "No" }}</div>
-        <div class="col">{{ $train->prezzo_biglietto }}€</div>
-        <div class="col">{{ $train->possibilita_rimborso ? "Sì" : "No" }}</div>
+        <div class="col  overflow-hidden">{{ $train->azienda }}</div>
+        <div class="col  overflow-hidden">{{ $train->stazione_partenza }}</div>
+        <div class="col  overflow-hidden">{{ $train->stazione_arrivo }}</div>
+        <div class="col  overflow-hidden">{{ $train->orario_partenza }}</div>
+        <div class="col  overflow-hidden">{{ $train->orario_arrivo }}</div>
+        <div class="col  overflow-hidden">{{ $train->codice_treno }}</div>
+        <div class="col  overflow-hidden">{{ $train->numero_carrozza }}</div>
+        <div class="col  overflow-hidden">{{ $train->in_orario ? "Sì" : "No" }}</div>
+        <div class="col  overflow-hidden">{{ $train->cancellato ? "Sì" : "No" }}</div>
+        <div class="col  overflow-hidden">{{ $train->prezzo_biglietto }}€</div>
+        <div class="col  overflow-hidden">{{ $train->possibilita_rimborso ? "Sì" : "No" }}</div>
       </div>
       @empty
       @endforelse
